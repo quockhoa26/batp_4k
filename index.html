@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành Định kiểu Bảng với CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        /* 1. Đặt độ rộng 100% và gộp đường viền đơn */
+        table {
+            width: 100%; /* */
+            border-collapse: collapse; /* Gộp đường viền liền kề */
+        }
+
+        /* 2. Tạo đường viền và padding cho tất cả các ô */
+        table, th, td {
+            border: 1px solid #111111; /* Đường viền nét liền màu đen */
+        }
+
+        th, td {
+            padding: 15px; /* Tạo khoảng cách thoáng giữa chữ và viền */
+        }
+
+        /* 3. Định dạng hàng tiêu đề (th) */
+        th {
+            height: 50px; /* Chiều cao tối thiểu cho tiêu đề */
+            text-align: left; /* Căn lề trái văn bản tiêu đề */
+            background-color: #333333; /* Màu nền tối */
+            color: #ffffff; /* Màu chữ trắng */
+        }
+
+        /* 4. Định dạng các ô dữ liệu (td) */
+        td {
+            height: 60px; /* Độ cao hàng dữ liệu */
+            vertical-align: bottom; /* Căn văn bản xuống phía dưới ô */
+            background-color: #f2f2f2; /* Màu nền xám nhạt */
+            color: #333333; /* Màu chữ xám đậm */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Bảng danh sách học viên (Đã áp dụng CSS)</h2>
+
+    <table>
+        <tr>
+            <th>Họ tên</th>
+            <th>Tuổi</th>
+            <th>Lớp</th>
+        </tr>
+        <tr>
+            <td>Nguyễn Văn A</td>
+            <td>20</td>
+            <td>Web</td>
+        </tr>
+        <tr>
+            <td>Trần Thị B</td>
+            <td>21</td>
+            <td>Web</td>
+        </tr>
+    </table>
+
+</body>
+</html>
